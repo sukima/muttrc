@@ -27,13 +27,18 @@ set sig_dashes
 set forward_decode
 
 # GPG
-set pgp_use_gpg_agent = yes
-set pgp_timeout = 3600
 set crypt_autosign = yes
 set crypt_autoencrypt = no
 set crypt_replysign = yes
 set crypt_replyencrypt = yes
 set crypt_replysignencrypted = yes
+set pgp_use_gpg_agent = yes
+set pgp_timeout = 3600
+# These are only available if you compile with the pgp verbose mime patch
+# brew install mutt --with-pgp-verbose-mime-patch
+# Add them to your ~/.mutt/local.rc if you use it.
+#set pgp_mime_signature_filename = "signature.asc"
+#set pgp_mime_signature_description = "Digital signature"
 
 # muttqt
 set query_command="/usr/local/bin/muttqt -q '%s'"
