@@ -51,8 +51,6 @@ set certificate_file=~/.mutt/certificates
 set alias_file=~/.mutt/aliases
 set move = no
 set include
-set sort = 'threads'
-set sort_aux = 'reverse-last-date-received'
 set auto_tag = no
 set implicit_autoview
 ignore "Authentication-Results:"
@@ -104,8 +102,9 @@ macro index D\# "T!~F!~D<enter>;<save-message>=[Gmail]/Trash<enter><enter>$" "De
 set to_chars    = ' +>-<L'
 
 # Sort by newest conversation first.
-set sort     = threads
-set sort_aux = last-date-received
+set sort=threads
+set sort_browser=date
+set sort_aux=reverse-last-date-received
 
 set text_flowed = yes
 unset mark_old
