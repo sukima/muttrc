@@ -1,6 +1,6 @@
 # Used when you don't have offlineimap and you connect directly to Gmail
 
-source "gpg --use-agent --no-tty -q -d ~/.secure/mutt_account.gpg |"
+source "~/.mutt/load_account_settings.sh |"
 
 set folder = "imaps://imap.gmail.com:993"
 set imap_check_subscribed
