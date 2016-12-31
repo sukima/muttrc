@@ -1,10 +1,5 @@
 # A basic .muttrc for use with Gmail
 
-# Who Am I?
-set from = "weaver.devin@gmail.com"
-set realname = "Devin Weaver"
-set pgp_sign_as = "DE767C8A"
-
 # Template for mutt_account.gpg (Skip for offlineimap)
 #
 #     # Change the following six lines to match your Gmail account details
