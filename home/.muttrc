@@ -20,7 +20,7 @@ source ~/.mutt/custom_colors.rc
 source ~/.mutt/gpg.rc
 
 # Change the following line to a different editor you prefer.
-set editor = 'vim -c "silent call SetSpellingNavigation(1)" +7'
+set editor = 'vim -c "silent call ProseFormattingOn()" +7'
 set autoedit
 set edit_headers
 set sig_dashes
