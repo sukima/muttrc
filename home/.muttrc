@@ -1,5 +1,10 @@
 # A basic .muttrc for use with Gmail
 
+# Who Am I?
+set from = "weaver.devin@gmail.com"
+set realname = "Devin Weaver"
+set pgp_sign_as = "DE767C8A"
+
 # Template for mutt_account.gpg (Skip for offlineimap)
 #
 #     # Change the following six lines to match your Gmail account details
@@ -13,11 +18,6 @@ source `MODE=gmail_direct; if [ -z "$MUTT_IMAP" -a -d ~/Mail/Gmail ]; then MODE=
 source ~/.mutt/mutt-colors-solarized/mutt-colors-solarized-dark-16.muttrc
 source ~/.mutt/custom_colors.rc
 source ~/.mutt/gpg.rc
-
-# Who Am I?
-set from = "weaver.devin@gmail.com"
-set realname = "Devin Weaver"
-set pgp_sign_as = "DE767C8A"
 
 # Change the following line to a different editor you prefer.
 set editor = 'vim -c "silent call SetSpellingNavigation(1)" +7'
